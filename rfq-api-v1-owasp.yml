@@ -1,8 +1,8 @@
-openapi: '3.0.2'
+openapi: "3.0.2"
 info:
   title: Quotation API
   description: Get a quote online
-  version: '1.0'
+  version: "1.0"
   contact:
     email: bayer@predic8.de
 servers:
@@ -15,14 +15,14 @@ paths:
       tags:
         - Quote
       description: Request a Quote
-      operationId: getQuote
+      operationid: getQuote
       requestBody:
         content:
           application/json:
             schema:
               $ref: "#/components/schemas/Quotation"
       responses:
-        '200':
+        "200":
           description: OK
 
 components:
@@ -54,4 +54,3 @@ components:
           type: string
           pattern: "[A-Z]{3}"
           maxLength: 3
-      
